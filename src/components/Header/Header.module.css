@@ -1,0 +1,63 @@
+.homeContainer {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroContent h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: var(--text-light);
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 40px;
+}
+
+.primaryCta {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.1s;
+}
+
+.primaryCta:hover {
+  background-color: #5a52d3;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.featureCard {
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-card);
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-speed);
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+.icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 10px;
+}
