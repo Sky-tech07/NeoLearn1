@@ -1,0 +1,74 @@
+.header {
+  background-color: var(--card-background);
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logoImage {
+  height: 45px;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 5px rgba(108, 99, 255, 0.5));
+}
+
+.logoText {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-light);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navLink {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 0;
+  position: relative;
+  transition: color var(--transition-speed);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width var(--transition-speed);
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.navLink:hover {
+  color: var(--primary-color);
+}
+
+.ctaButton {
+  background-color: var(--secondary-color);
+  color: var(--background-dark);
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color var(--transition-speed);
+}
